@@ -1,0 +1,110 @@
+.pos-relative{
+    position: relative;
+    background-color: $color;
+}
+.header {
+    &__title{
+        &--name{
+            font-size: 4.0em;
+            text-transform: uppercase;
+            margin-top: 1rem;
+            margin-left: 1rem;
+        }
+        &--first--name{
+            font-weight: bold;
+            color: $color;
+            @include tablet{
+                color: white;
+            }
+        }
+        &--job{
+            font-size: 1.7rem;
+            margin-left: 1rem;
+        }
+        &--mini-border{
+            width: 60px;
+            margin-top: -7px;
+            position: absolute;
+            left: 30px;
+            border-bottom: $color solid 0.2em;
+            @include tablet{
+                border-bottom: white solid 0.2em;
+            }
+        }
+        @include tablet{
+            background-color: $color;
+            padding-bottom: 1rem;
+        }
+    }
+}
+.infos {
+    &__title{
+        background-color: #343a40;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 1.8em;
+        padding: 0.3rem;
+        color: $color;
+    }
+    &__contact{
+        padding: .8rem;
+        list-style-type: none;
+        > li {
+            margin-top: .8rem;
+        }
+        i {
+            color: black;
+        }
+    }
+    &__about{
+        text-align: justify;
+        padding: 1rem;
+    }
+    &__loisirs{
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+        @include tablet{
+            position: static;
+        }
+        &--icons{
+            text-align: center;
+            font-size: 1.5rem;
+            > i{
+                color: black;
+                border: 2px solid black;
+                padding: 12px;
+                border-radius: 50%;
+            }
+        }
+    }
+}
+.content-cv{
+    &__title{
+        text-transform: uppercase;
+        margin: 1rem 0;
+        border-bottom: $color solid 0.1em;
+        i{
+            color: $color;
+            margin-right: 1rem;
+        }
+    }
+    &__list{
+        display: flex;
+        justify-content: flex-start;
+        @include mobile-only{
+            display: block;
+        }
+        i{
+            margin-right: 1rem;
+            color: $color;
+        }
+        .fa{
+            font-size: 0.6em;
+        }
+        &--lieu{
+            font-size: 1.2em;
+            text-transform: uppercase;
+        }
+    }
+}
