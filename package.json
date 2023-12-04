@@ -19,5 +19,8 @@
   "homepage": "https://github.com/Kayo89/cv#readme",
   "dependencies": {
     "bootstrap": "^4.5.2"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.32"
   }
 }
